@@ -1,0 +1,6 @@
+[submodule "bin/i3blocks-contrib"]
+	path = bin/i3blocks-contrib
+	url = https://github.com/vivien/i3blocks-contrib.git
+[submodule "home/oh-my-zsh"]
+	path = home/oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git

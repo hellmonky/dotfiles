@@ -1,0 +1,51 @@
+# i3blocks 包含插件的配置
+color=#f3f4f5
+separator_block_width=15
+markup=none
+
+[bandwith]
+command=~/.local/bin/i3blocks-contrib/bandwidth2/bandwidth2
+interval=persist
+markup=pango
+LABEL=
+WARN_RX=307200
+WARN_TX=30720
+CRIT_RX=512000
+CRIT_TX=51200
+
+[volume]
+command=~/.local/bin/i3blocks-contrib/volume/volume
+LABEL=♪
+interval=1
+signal=10
+STEP=5%
+MIXER=[determined automatically]
+SCONTROL=[determined automatically]
+NATURAL_MAPPING=0
+
+[memory]
+command=~/.local/bin/i3blocks-contrib/memory/memory
+label=MEM
+interval=30
+
+[disk]
+command=~/.local/bin/i3blocks-contrib/disk/disk
+LABEL=DISK
+ALERT_LOW=10
+interval=30
+
+[rofi-calendar]
+command=~/.local/bin/i3blocks-contrib/rofi-calendar/rofi-calendar
+interval=5
+
+[battery2]
+command=~/.local/bin/i3blocks-contrib/battery2/battery2
+markup=pango
+interval=30
+
+#[batterybar]
+#command=~/.local/bin/i3blocks-contrib/batterybar/batterybar
+#label=bat:
+#interval=5
+#markup=pango
+#min_width=bat: ■
